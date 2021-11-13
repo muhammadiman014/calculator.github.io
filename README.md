@@ -1,2 +1,2 @@
-# calculator.github.io
+# calculatoriman.github.io
 https://github.com/muhammadiman014
