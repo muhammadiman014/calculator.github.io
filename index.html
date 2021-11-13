@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Ku</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="shortcut icon" href="Asset/icons8-calculator-64.png">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Kalkulator -->
+    <form action="" name='calculator'> 
+      <input type="text" name='result'>
+      <div class="all-button">
+        <div class="count1">
+          <input type="button" name='btnclear' value='AC' onClick='result.value=""'>
+          <input type="button" name='btndivision' value='%' onClick='math("%")'>  
+          <input type="button" class="operator" name='btndivision' value='/' onClick='math("/")'>
+        </div>
+
+        <div class="count2">
+          <input type="button" name='btn7' value='7' onClick='math(btn7.value)'>
+          <input type="button" name='btn8' value='8' onClick='math(btn8.value)'>
+          <input type="button" name='btn9' value='9' onClick='math(btn9.value)'>
+          <input type="button" class="operator" name='btnmultiply' value='*' onClick='math(btnmultiply.value)'>
+        </div>
+
+        <div class="count3">
+          <input type="button" name='btn4' value='4' onClick='math(btn4.value)'>
+          <input type="button" name='btn5' value='5' onClick='math(btn5.value)'>
+          <input type="button" name='btn6' value='6' onClick='math(btn6.value)'>
+          <input type="button" class="operator" name='btnminus' value='-' onClick='math(btnminus.value)'>
+        </div>
+
+        <div class="count4">
+          <input type="button" name='btn1' value='1' onClick='math(btn1.value)'>
+          <input type="button" name='btn2' value='2' onClick='math(btn2.value)'>
+          <input type="button" name='btn3' value='3' onClick='math(btn3.value)'>
+          <input type="button" class="operator" name='btnplus' value='+' onClick='math(btnplus.value)'>
+        </div>
+
+        <div class="count5">
+          <input type="button" name='btndot' value='.' onClick='math(btndot.value)'>
+          <input type="button" name='btn0' value='0' onClick='math(btn0.value)'>
+          <input type="button" class="operator" name='btnresult' value='=' onClick='result.value=eval(result.value)'>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="p">
+    <p>Created by: Muhammad Iman Akbar</p>
+    <p>Calculator icon by Icons8</p>
+  </div>
+  <script src='script.js'></script>
+</body>
